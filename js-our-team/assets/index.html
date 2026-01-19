@@ -26,14 +26,34 @@
 
       <!-- container delle card riguardanti ogni membro del team -->
       <!-- da cancellare in modo tale da riempire con un ciclo -->
-      <div class="cards-container" id="members-container">
-        
-      </div>
+      <div class="cards-container" id="members-container"></div>
+    </div>
+    <!-- aggiunta di un form per poter aggiungere membri del team -->
+    <div class="form-container">
+      <form id="add-team-member">
+        <div>
+          <label for="new-member-name"></label>
+          <input id="new-member-name" type="text" name="new-member-name" id="" />
+        </div>
+        <div>
+          <label for="new-member-role"></label>
+          <input id="new-member-role" type="text" name="new-member-role" id="" />
+        </div>
+        <div>
+          <label for="new-member-email"></label>
+          <input id="new-member-email" type="text" name="new-member-email" id="" />
+        </div>
+        <div>
+          <label for="new-member-img"></label>
+          <input id="new-member-img" type="text" name="new-member-img" id="" />
+        </div>
+
+        <button type="submit">Aggiungi come nuovo membro</button>
+      </form>
     </div>
     <!-- collegamento a functions -->
-     <script src="./functions.js"></script>
+    <script src="./functions.js"></script>
     <!-- collegamento al file js -->
     <script src="./script.js"></script>
-    
   </body>
 </html>
