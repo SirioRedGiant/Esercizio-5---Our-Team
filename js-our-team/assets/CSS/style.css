@@ -1,0 +1,150 @@
+body {
+  font-family: "Fredoka", sans-serif;
+  background-color: #f4f7f6;
+  margin: 0;
+  padding: 20px;
+}
+
+.team-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ff4757;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 40px;
+  max-width: 900px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.card-team-member {
+  display: flex;
+  background: white;
+  border-radius: 0;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.member-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.member-dati {
+  padding: 10px;
+  background-color: #000;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.member-name {
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.member-role {
+  color: #ccc;
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+}
+
+.member-email {
+  color: #00bcd4;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+.form-container {
+  max-width: 500px;
+  margin: 0 auto;
+  background: #fff;
+  color: #333;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff4757;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #e63946;
+}
+
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 2.2rem;
+  }
+
+  .cards-container {
+    /* Riduce il min-width delle card per adattarsi meglio a schermi più stretti */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+/* Schermi piccoli, sotto i 576px */
+@media (max-width: 576px) {
+  body {
+    padding: 10px; /* Meno padding sui lati dei cellulari */
+  }
+
+  .card-team-member {
+    /* Su schermi molto piccoli, l'immagine e il testo si sovrappongono */
+    flex-direction: column;
+  }
+
+  .member-img {
+    width: 100%; /* L'immagine occupa tutta la larghezza */
+    height: auto;
+  }
+
+  .member-dati {
+    text-align: center; /* Centra il testo quando è in colonna */
+  }
+
+  .form-container {
+    padding: 20px;
+  }
+}
