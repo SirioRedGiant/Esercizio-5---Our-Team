@@ -5,7 +5,7 @@ function rendererTeam(container) {
     const member = teamMembers[i];
 
     const cardHtml = `<div class="card-team-member">
-          <img class="member-img" src="./${member.img}" alt="${member.img}" />
+          <img class="member-img" src="./assets/${member.img}" alt="${member.img}" />
           <div class="member-dati">
             <div class="member-name">${member.name}</div>
             <div class="member-role">${member.role}</div>
